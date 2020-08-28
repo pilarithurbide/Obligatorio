@@ -41,6 +41,7 @@
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
       <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+      <a class="py-2 d-none d-md-inline-block" id="nomb" style="color:greenyellow; font-weight: bold; font-style: italic;" ></a>
     </div>
   </nav>
   <div class="container p-5">
@@ -59,6 +60,10 @@
       <div></div>
     </div>
   </div>
+  <script>
+    let firstName = localStorage.getItem('identificacion') // setea el dato del usuario en el span de id user
+    document.getElementById('nomb').innerHTML = firstName
+ </script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/dropzone.js"></script>
